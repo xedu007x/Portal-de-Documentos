@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main */
+.main {
+    padding: 3rem 0;
+}
+
+/* Dashboard */
+.dashboard h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    border-color: #4285f4;
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Formulários */
+.formulario {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.form-header h2 {
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.btn-voltar {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background: #5a6268;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4285f4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* User Story Template */
+.user-story-template {
+    background: #f8f9ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #4285f4;
+}
+
+.user-story-template h4 {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.inline-input {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 150px;
+    padding: 0.25rem 0.5rem !important;
+    margin: 0 0.25rem;
+    border: 1px solid #ddd !important;
+    border-radius: 4px;
+    background: white;
+}
+
+/* Critérios de Aceite */
+.criterios-aceite {
+    margin: 2rem 0;
+}
+
+.criterios-aceite h4 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.criterio {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.criterio h5 {
+    margin-bottom: 1rem;
+    color: #4285f4;
+}
+
+/* Informações Gerais */
+.info-gerais {
+    background: #f8f9ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #4285f4;
+}
+
+.info-gerais h4 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Etapas de Teste */
+.etapas-teste {
+    margin: 2rem 0;
+}
+
+.etapas-teste h4 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.etapa {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+/* Botões */
+.btn-processar,
+.btn-salvar,
+.btn-exportar,
+.btn-adicionar {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-processar {
+    background: #4285f4;
+    color: white;
+}
+
+.btn-processar:hover {
+    background: #3367d6;
+    transform: translateY(-2px);
+}
+
+.btn-salvar {
+    background: #34a853;
+    color: white;
+}
+
+.btn-salvar:hover {
+    background: #2d8f47;
+    transform: translateY(-2px);
+}
+
+.btn-exportar {
+    background: #ea4335;
+    color: white;
+}
+
+.btn-exportar:hover {
+    background: #d33b2c;
+    transform: translateY(-2px);
+}
+
+.btn-adicionar {
+    background: #fbbc04;
+    color: #333;
+}
+
+.btn-adicionar:hover {
+    background: #f9ab00;
+    transform: translateY(-2px);
+}
+
+.form-actions {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #f0f0f0;
+    text-align: center;
+}
+
+/* Documentos Salvos */
+.documentos-salvos {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.documentos-salvos h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.documento-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #f8f9fa;
+}
+
+.documento-info h4 {
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+
+.documento-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.documento-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-pequeno {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-editar {
+    background: #4285f4;
+    color: white;
+}
+
+.btn-excluir {
+    background: #ea4335;
+    color: white;
+}
+
+.btn-pequeno:hover {
+    transform: translateY(-1px);
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #4285f4;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .documento-item {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* Estilos para sugestão completa */
+.sugestao-completa {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #e9ecef;
+}
+
+.campo-sugestao {
+    background: white;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.campo-sugestao strong {
+    color: #495057;
+    font-weight: 600;
+}
+
+.historia-principal {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.historia-texto {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.destaque {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.criterios-aceite {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 1px solid #dee2e6;
+}
+
+.criterio {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+}
+
+.criterio strong {
+    color: #495057;
+}
+
+.secao-adicional {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+    border: 1px solid #dee2e6;
+}
+
+.secao-adicional h4 {
+    color: #495057;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.conteudo-secao {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.acoes-sugestao {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.acoes-sugestao button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.btn-salvar {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+}
+
+.btn-salvar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.btn-exportar {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+}
+
+.btn-exportar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-editar {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    color: white;
+}
+
+.btn-editar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.btn-cancelar {
+    background: linear-gradient(135deg, #6c757d, #495057);
+    color: white;
+}
+
+.btn-cancelar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+}
+
+/* Responsividade para ações */
+@media (max-width: 768px) {
+    .acoes-sugestao {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .acoes-sugestao button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
